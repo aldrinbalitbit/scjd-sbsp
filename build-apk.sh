@@ -1,5 +1,5 @@
 #!/bin/bash
 ./gradlew assembleDebug
 echo "Build completed! The apks has served."
-echo "Files: "
-ls app/build/output/apk/debug
+echo "Those are served apk files are:"
+ls app/build/outputs/apk/debug
