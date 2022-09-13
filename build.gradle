@@ -1,0 +1,49 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath root
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+  versions = [
+    android = [
+      gradle = "7.2.2",
+      desugar = "1.2.2"
+    ],
+    androidx = [
+      appcompat = "1.5.0",
+    ],
+    google = [
+      material = "1.6.1",
+    ],
+    leakcanary = "2.9.1"
+  ]
+  dependencies = [
+    android = [
+      gradle = "com.android.tools.build:gradle:${version.android.gradle}",
+      desugar = "com.android.tools:desugar_jdk_libs:${version.android.desugar}",
+    ],
+    androidx = [
+      appcompat = "androidx.appcompat:appcompat:${versions.androidx.appcompat}",
+    ],
+    google = [
+      material = "com.google.android.material:material:${versions.google.material}",
+    ],
+    leakcanary = "com.squareup.leakcanary:leakcanary-android:${versions.leakcanary}",
+  ]
+}
