@@ -30,7 +30,7 @@ android {
 dependencies {
     api dependencies.androidx.appcompat
     api dependencies.google.material
-    coreLibraryDesugaring dependencies.android.desugar
+    coreLibraryDesugaring dependencies.android.desugarJdkLibs
 
     debugApi dependencies.leakcanary
 }

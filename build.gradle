@@ -2,8 +2,8 @@ buildscript {
     ext {
         versions = [
             android = [
-                'gradle' = '7.2.2',
-                'desugar' = '1.2.2'
+                'gradlePlugin' = '7.2.2',
+                'desugarJdkLibs' = '1.2.2',
             ],
             androidx = [
                 'appcompat' = '1.5.0',
@@ -15,8 +15,8 @@ buildscript {
 	]
         dependencies = [
             android = [
-                gradle = "com.android.tools.build:gradle:${version.android.gradle}",
-                desugar = "com.android.tools:desugar_jdk_libs:${version.android.desugar}",
+                gradlePlugin = "com.android.tools.build:gradle:${version.android.gradlePlugin}",
+                desugarJdkLibs = "com.android.tools:desugar_jdk_libs:${version.android.desugarJdkLibs}",
             ],
             androidx = [
                 appcompat = "androidx.appcompat:appcompat:${versions.androidx.appcompat}",
@@ -32,7 +32,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath dependencies.android.gradle
+        classpath dependencies.android.gradlePlugin
     }
 }
 
