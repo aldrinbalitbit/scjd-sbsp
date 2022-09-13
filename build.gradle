@@ -1,45 +1,17 @@
 buildscript {
-    ext {
-        versions = [
-            android = [
-                'gradlePlugin' = '7.2.2',
-                'desugarJdkLibs' = '1.2.2',
-            ],
-            androidx = [
-                'appcompat' = '1.5.0',
-            ],
-            google = [
-                'material' = '1.6.1',
-            ],
-            'leakcanary' = '2.9.1',
-	]
-        dependencies = [
-            android = [
-                gradlePlugin = "com.android.tools.build:gradle:${version.android.gradlePlugin}",
-                desugarJdkLibs = "com.android.tools:desugar_jdk_libs:${version.android.desugarJdkLibs}",
-            ],
-            androidx = [
-                appcompat = "androidx.appcompat:appcompat:${versions.androidx.appcompat}",
-            ],
-            google = [
-                material = "com.google.android.material:material:${versions.google.material}",
-            ],
-            leakcanary = "com.squareup.leakcanary:leakcanary-android:${versions.leakcanary}",
-	]
-    }
     repositories {
         mavenCentral()
         google()
     }
     dependencies {
-        classpath dependencies.android.gradlePlugin
+        classpath "com.android.tools.build:gradle:7.2.2"
     }
 }
 
 allprojects {
     repositories {
-        google()
         mavenCentral()
+	google()
     }
 }
 
