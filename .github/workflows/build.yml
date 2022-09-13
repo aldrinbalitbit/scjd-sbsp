@@ -21,3 +21,24 @@ jobs:
         uses: gradle/gradle-build-action@main
       - name: Build debug app
         run: ./build-apk.sh
+      - name: Attach universal APK file
+        uses: actions/upload-artifact@main
+        with:
+          name: scjd-sbsp_debug_universal
+          path: |
+            app/build/outputs/apk/debug/scjd-sbsp_debug_universal.apk
+            app/build/outputs/apk/debug/output-metadata.json
+      - name: Attach arm64-v8a APK file
+        uses: actions/upload-artifact@main
+        with:
+          name: scjd-sbsp_debug_arm64-v8a
+          path: |
+            app/build/outputs/apk/debug/scjd-sbsp_debug_arm64-v8a.apk
+            app/build/outputs/apk/debug/output-metadata.json
+      - name: Attach armeabi-v7a  APK file
+        uses: actions/upload-artifact@main
+        with:
+          name: scjd-sbsp_debug_armeabi-v7a
+          path: |
+            app/build/outputs/apk/debug/scjd-sbsp_debug_armeabi-v7a.apk
+            app/build/outputs/apk/debug/output-metadata.json
