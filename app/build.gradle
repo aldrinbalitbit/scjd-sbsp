@@ -28,9 +28,9 @@ android {
 }
 
 dependencies {
-    api rootProject.ext.dependencies.androidx.appcompat
-    api rootProject.ext.dependencies.google.material
-    coreLibraryDesugaring rootProject.ext.dependencies.android.desugar
+    api dependencies.androidx.appcompat
+    api dependencies.google.material
+    coreLibraryDesugaring dependencies.android.desugar
 
-    debugApi rootProject.ext.dependencies.leakcanary
+    debugApi dependencies.leakcanary
 }
