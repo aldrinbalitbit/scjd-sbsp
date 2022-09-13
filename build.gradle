@@ -2,16 +2,16 @@ buildscript {
     ext {
         versions = [
             android = [
-                gradle = "7.2.2",
-                desugar = "1.2.2"
+                'gradle' = '7.2.2',
+                'desugar' = '1.2.2'
             ],
             androidx = [
-                appcompat = "1.5.0",
+                'appcompat' = '1.5.0',
             ],
             google = [
-                material = "1.6.1",
+                'material' = '1.6.1',
             ],
-            leakcanary = "2.9.1"
+            'leakcanary' = '2.9.1',
 	]
         dependencies = [
             android = [
