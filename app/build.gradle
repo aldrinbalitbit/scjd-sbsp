@@ -43,7 +43,6 @@ android {
 }
 
 dependencies {
-    // api "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${versions.kotlin}"
     api "androidx.appcompat:appcompat:${versions.androidxAppCompat}"
     api "com.google.android.material:material:${versions.googleMaterial}"
     debugApi "com.squareup.leakcanary:leakcanary-android:${versions.leakcanary}"
