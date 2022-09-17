@@ -9,7 +9,7 @@ import android.widget.*;
 import com.aldringames.scjd.sbsp.common.*;
 import java.util.*;
 
-public class TVActivity extends BaseActivityKt {
+public class TVActivity extends BaseActivity {
 	
 	private VideoView video;
 	private Random random = new Random();

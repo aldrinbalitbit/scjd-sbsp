@@ -7,10 +7,10 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.widget.LinearLayout;
 import android.widget.VideoView;
-import com.aldringames.scjd.sbsp.common.BaseActivityKt;
+import com.aldringames.scjd.sbsp.common.BaseActivity;
 import java.util.Random;
 
-public class MainActivity extends BaseActivityKt {
+public class MainActivity extends BaseActivity {
 	private VideoView video;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
