@@ -17,10 +17,8 @@ jobs:
         with:
           distribution: 'zulu'
           java-version: '17'
-      - name: Setup Gradle
-        uses: gradle/gradle-build-action@main
       - name: Build debug app
-        run: ./build-apk.sh
+        run: ./gradlew assembleDebug --stacktrace
       - name: Attach universal APK file
         uses: actions/upload-artifact@main
         with:

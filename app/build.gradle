@@ -43,7 +43,9 @@ android {
 }
 
 dependencies {
-    api "androidx.appcompat:appcompat:1.5.0"
-    api "com.google.android.material:material:1.6.1"
-    debugApi "com.squareup.leakcanary:leakcanary-android:2.9.1"
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${versions.kotlin}"
+    api "androidx.appcompat:appcompat:${versions.androidxAppCompat}"
+    api "com.google.android.material:material:${versions.googleMaterial}"
+    debugApi "com.squareup.leakcanary:leakcanary-android:${versions.leakcanary}"
+    releaseApi "com.squareup.leakcanary:leakcanary-android-no-op:${versions.leakcanary}"
 }
