@@ -17,7 +17,8 @@ public class BaseActivity extends AppCompatActivity {
 	    @Override
 	    public void onSystemUiVisibilityChange(int visibility) {
 		if ((visibility & View.SYSTEM_UI_FLAG_FULLSCREEN) == 0) {
-		hideSystemUI();
+		    hideSystemUI();
+		}
             }
         });
     }
