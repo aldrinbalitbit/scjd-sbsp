@@ -4,11 +4,11 @@ buildscript {
         google()
     }
     ext.versions = [
-      androidGradlePlugin: '7.2.2',
-      kotlin: '1.7.10',
-      androidxAppCompat: '1.5.0',
-      googleMaterial: '1.6.0',
-      leakcanary: '1.5.4',
+      'androidGradlePlugin': '7.2.2',
+      'kotlin': '1.7.10',
+      'androidxAppCompat': '1.5.0',
+      'googleMaterial': '1.6.0',
+      'leakcanary': '1.5.4',
     ]
     dependencies {
         classpath "com.android.tools.build:gradle:${versions.androidGradlePlugin}"
